@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maitrey Vivek Phatak — Portfolio</title>
+  <meta name="description" content="Portfolio of Maitrey Vivek Phatak: Applied Data Science, internships, research projects, and skills." />
+  <meta name="theme-color" content="#0b0c10" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg">
+    <div class="blob b1" aria-hidden="true"></div>
+    <div class="blob b2" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="brand-text">Maitrey Phatak</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#paper">Paper</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="pill">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <button id="themeBtn" class="iconbtn" aria-label="Toggle theme" title="Toggle theme">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 0 1 11.21 3a7 7 0 1 0 9.79 9.79Z" fill="currentColor"></path>
+        </svg>
+      </button>
+      <button id="menuBtn" class="iconbtn mobile" aria-label="Open menu" title="Menu">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div id="drawer" class="drawer" aria-hidden="true">
+    <div class="drawer-card">
+      <div class="drawer-top">
+        <span class="drawer-title">Menu</span>
+        <button id="closeDrawer" class="iconbtn" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+        </button>
+      </div>
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#experience" class="drawer-link">Experience</a>
+      <a href="#projects" class="drawer-link">Projects</a>
+      <a href="#paper" class="drawer-link">Paper</a>
+      <a href="#skills" class="drawer-link">Skills</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+    </div>
+  </div>
+
+  <main id="top" class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <p class="kicker reveal">Applied Data Science • ML • Analytics • CV</p>
+        <h1 class="title reveal" style="--d: 0.06s;">
+          Maitrey Vivek Phatak
+        </h1>
+        <p class="subtitle reveal" style="--d: 0.12s;">
+          Data scientist-in-training focused on building reproducible pipelines, intelligent agents, and
+          real-world analytics systems — from SQL + PySpark ETL to deployment-ready computer vision.
+        </p>
+
+        <div class="cta reveal" style="--d: 0.18s;">
+          <!-- Replace # with your real links -->
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+
+        <div class="stats reveal" style="--d: 0.24s;">
+          <div class="stat">
+            <div class="stat-num">38M+</div>
+            <div class="stat-label">Interactions analyzed (Outbrain)</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">20%</div>
+            <div class="stat-label">Ops efficiency gain (ETL reporting)</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">37%</div>
+            <div class="stat-label">Engagement lift (website + chatbot)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right reveal" style="--d: 0.12s;">
+        <div class="panel">
+          <div class="panel-top">
+            <span class="badge">Currently</span>
+            <span class="muted">M.S. Applied Data Science</span>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <span class="label">University</span>
+              <span class="value">University of Florida</span>
+            </div>
+            <div class="row">
+              <span class="label">Timeline</span>
+              <span class="value">Aug 2025 → Sept 2027</span>
+            </div>
+            <div class="row">
+              <span class="label">Strengths</span>
+              <span class="value">ETL • CV • Dashboards • Agents</span>
+            </div>
+          </div>
+          <div class="panel-foot">
+            <button class="chip" data-scroll="#experience">Experience</button>
+            <button class="chip" data-scroll="#skills">Skills</button>
+            <button class="chip" data-scroll="#contact">Contact</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head reveal">
+        <h2>About</h2>
+        <p class="muted">What I do and what I care about.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card reveal" style="--d: 0.06s;">
+          <h3>Profile</h3>
+          <p>
+            I build data products that are <strong>measurable</strong>, <strong>reproducible</strong>, and
+            <strong>deployment-aware</strong>—from SQL/Python reporting automation to scalable Spark pipelines and
+            computer vision model evaluation on cloud.
+          </p>
+          <p class="muted">
+            I enjoy work that connects analytics to decisions: forecasting, KPI design, experimentation, and
+            data storytelling through dashboards.
+          </p>
+        </article>
+
+        <article class="card reveal" style="--d: 0.12s;">
+          <h3>Highlights</h3>
+          <ul class="bullets">
+            <li>Automated ETL-style reporting pipelines improving operational efficiency by <strong>20%</strong>.</li>
+            <li>Revamped a company website + deployed a chatbot to boost engagement by <strong>37%</strong>.</li>
+            <li>Built feature engineering + clustering on <strong>38M+</strong> interactions to identify personas.</li>
+            <li>Designed multi-agent M&A negotiation simulator with valuation + antitrust loops.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <h2>Professional Experience</h2>
+        <p class="muted">Internships and applied work.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="titem reveal" style="--d: 0.06s;">
+          <div class="tmeta">
+            <div class="trole">Technical Intern</div>
+            <div class="torg">Thapasu Foods, LLP</div>
+            <div class="tdate">Mar 2024 — Jan 2025</div>
+          </div>
+          <div class="tbody">
+            <ul class="bullets">
+              <li>Analyzed sales/marketing data using SQL + Python; automated ETL-style reporting pipelines for a <strong>20%</strong> efficiency gain.</li>
+              <li>Revamped the company website and deployed a chatbot, boosting engagement by <strong>37%</strong>.</li>
+              <li>Designed demand forecasting + data modeling workflows to evaluate product performance across regions.</li>
+              <li>Partnered across business/engineering to validate transformations and document workflows for reproducibility and UNSDG alignment.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="titem reveal" style="--d: 0.12s;">
+          <div class="tmeta">
+            <div class="trole">Computer Vision Intern</div>
+            <div class="torg">Caelum</div>
+            <div class="tdate">Oct 2023 — Feb 2024</div>
+          </div>
+          <div class="tbody">
+            <ul class="bullets">
+              <li>Surveyed online shopping platforms to analyze brand popularity; translated findings into UX recommendations.</li>
+              <li>Reviewed virtualization research and integrated findings into a more scalable strategy.</li>
+              <li>Processed large-scale fashion image datasets via modular Spark pipelines for reproducibility.</li>
+              <li>Improved object detection using bounding boxes/augmentation/segmentation; packaged and deployed models on AWS to evaluate performance and drift.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <h2>Research Projects</h2>
+        <p class="muted">Deep dives—agents, behavior modeling, and economic resilience.</p>
+      </div>
+
+      <div class="cards-3" id="projectGrid">
+        <!-- Filled by script.js -->
+      </div>
+    </section>
+
+    <section id="paper" class="section">
+      <div class="section-head reveal">
+        <h2>Technical Paper</h2>
+        <p class="muted">Publication and academic work.</p>
+      </div>
+
+      <article class="card reveal">
+        <div class="paper">
+          <div>
+            <h3>Alzheimer Detection System</h3>
+            <p class="muted">International Research Journal of Engineering and Technology (IRJET) — Volume 10, Issue 04 (Apr 2023)</p>
+          </div>
+          <div class="paper-actions">
+            <!-- Add your paper link if available -->
+            <a class="btn" href="#" aria-disabled="true">Paper link (add)</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <h2>Skills</h2>
+        <p class="muted">Tools I use to ship work.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card reveal" style="--d:0.06s;">
+          <h3>Programming</h3>
+          <div class="taglist">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">C</span>
+            <span class="tag">Solidity</span>
+            <span class="tag">SQL</span>
+            <span class="tag">PySpark</span>
+          </div>
+        </article>
+
+        <article class="card reveal" style="--d:0.12s;">
+          <h3>Web</h3>
+          <div class="taglist">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Node.js</span>
+          </div>
+        </article>
+
+        <article class="card reveal" style="--d:0.06s;">
+          <h3>Libraries & Tools</h3>
+          <div class="taglist">
+            <span class="tag">TensorFlow</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Power BI</span>
+          </div>
+        </article>
+
+        <article class="card reveal" style="--d:0.12s;">
+          <h3>Domains</h3>
+          <div class="taglist">
+            <span class="tag">Applied Data Science</span>
+            <span class="tag">AI / ML</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Forecasting</span>
+            <span class="tag">Dashboards</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head reveal">
+        <h2>Contact</h2>
+        <p class="muted">Let’s build something useful.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card reveal" style="--d:0.06s;">
+          <h3>Get in touch</h3>
+          <p class="muted">
+            Replace these with your real links:
+          </p>
+          <div class="contact">
+            <a class="btn primary" href="mailto:you@example.com">Email</a>
+            <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </article>
+
+        <article class="card reveal" style="--d:0.12s;">
+          <h3>Co‑curricular</h3>
+          <p>
+            Collaborating with a professor on a project focused on <strong>Personal Health Record (PHR)</strong> systems.
+          </p>
+          <p class="muted">
+            If you want, add a short paragraph here describing your role, stack, and what “done” looks like.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <span>© <span id="year"></span> Maitrey Vivek Phatak</span>
+        <span class="sep">•</span>
+        <span class="muted">Built for GitHub Pages</span>
+      </div>
+      <a class="muted" href="#top">Back to top ↑</a>
+    </footer>
+  </main>
+
+  <!-- Project modal -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card" role="document">
+      <div class="modal-top">
+        <div>
+          <div id="modalTitle" class="modal-title">Project</div>
+          <div id="modalMeta" class="modal-meta muted">Meta</div>
+        </div>
+        <button id="modalClose" class="iconbtn" aria-label="Close dialog">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="modalDesc"></p>
+        <div id="modalBullets" class="modal-bullets"></div>
+        <div id="modalTags" class="taglist" style="margin-top:14px;"></div>
+      </div>
+      <div class="modal-foot">
+        <a id="modalGit" class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
+        <a id="modalLive" class="btn primary" href="#" target="_blank" rel="noreferrer">Live</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
