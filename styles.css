@@ -454,6 +454,20 @@ a:hover{opacity:.92}
   flex: 0 0 auto;
 }
 
+.cursor-glow {
+  position: fixed;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(124,92,255,0.35), transparent 60%);
+  transform: translate(-50%, -50%);
+  filter: blur(40px);
+  z-index: -1;
+}
+
+
+
 /* ===== Reveal animation ===== */
 .reveal{
   opacity: 0;
