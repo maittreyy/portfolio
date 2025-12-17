@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0c10" />
+  <title>Maitrey Vivek Phatak — Portfolio</title>
+  <meta name="description" content="Portfolio of Maitrey Vivek Phatak — Applied Data Science, Data Engineering, Computer Vision." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Ambient layers -->
+  <div class="bg">
+    <div class="grain" aria-hidden="true"></div>
+    <div class="blob b1" aria-hidden="true"></div>
+    <div class="blob b2" aria-hidden="true"></div>
+    <div class="blob b3" aria-hidden="true"></div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Go to top">
+      <span class="dot"></span>
+      <span class="brand-text">Maitrey</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#work">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="top-actions">
+      <a class="btn ghost" href="Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <button class="btn icon" id="themeBtn" aria-label="Toggle theme">
+        <span class="sun" aria-hidden="true">☀</span>
+        <span class="moon" aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="kicker reveal">Applied Data Science • Data Engineering • Computer Vision</div>
+          <h1 class="reveal" style="--d: .04s;">
+            Maitrey <span class="accent">Vivek</span> Phatak
+          </h1>
+
+          <p class="lead reveal" style="--d: .10s;">
+            I like building data products that are measurable, reproducible, and deployment-aware —
+            from SQL/Python automation and Spark pipelines to model evaluation and dashboards.
+          </p>
+
+          <div class="hero-cta reveal" style="--d: .16s;">
+            <a class="btn primary magnet" href="#projects">View projects</a>
+            <a class="btn ghost magnet" href="#contact">Let’s connect</a>
+          </div>
+
+          <div class="hero-badges reveal" style="--d: .20s;">
+            <span class="pill">University of Florida (M.S., Applied Data Science)</span>
+            <span class="pill">Mumbai University (B.Tech, IT)</span>
+          </div>
+        </div>
+
+        <aside class="hero-card card reveal" style="--d: .12s;">
+          <div class="hero-card-top">
+            <div class="avatar" aria-hidden="true">
+              <span>MVP</span>
+            </div>
+            <div>
+              <h3 class="tight">Quick links</h3>
+              <p class="muted tight">Everything in one place.</p>
+            </div>
+          </div>
+
+          <div class="stack">
+            <a class="link-row magnet" href="Resume.pdf" target="_blank" rel="noopener">
+              <span>Resume (PDF)</span>
+              <span class="chev">↗</span>
+            </a>
+            <a class="link-row magnet" href="#projects">
+              <span>Featured projects</span>
+              <span class="chev">→</span>
+            </a>
+            <a class="link-row magnet" href="#contact">
+              <span>Contact</span>
+              <span class="chev">→</span>
+            </a>
+          </div>
+
+          <div class="mini-stats">
+            <div class="stat">
+              <div class="num" data-count="20">0</div>
+              <div class="lbl">Efficiency uplift</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="3">0</div>
+              <div class="lbl">Flagship projects</div>
+            </div>
+            <div class="stat">
+              <div class="num" data-count="2">0</div>
+              <div class="lbl">Core internships</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="mouse"></span>
+        <span class="text">Scroll</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>About</h2>
+          <p class="muted">A mix of data, creativity, and curiosity.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card reveal" style="--d: .06s;">
+            <h3>Profile</h3>
+            <p>
+              I’m a data-focused builder who enjoys turning messy inputs into clean, decision-ready outputs.
+              I care about <strong>reproducibility</strong>, <strong>clarity</strong>, and <strong>real-world constraints</strong> —
+              not just “works on my machine”.
+            </p>
+            <p class="muted">
+              I like projects that connect analytics to action: forecasting, KPI design, experimentation,
+              and storytelling through dashboards.
+            </p>
+          </article>
+
+          <article class="card reveal" style="--d: .12s;">
+            <h3>Interests</h3>
+            <ul class="bullets">
+              <li><strong>Writing poems</strong> — I like packing big feelings into small lines.</li>
+              <li><strong>Reading</strong> — fiction, essays, and anything with strong ideas.</li>
+              <li><strong>Writing stories</strong> — characters, arcs, and “what if?” worlds.</li>
+              <li><strong>Valorant</strong> — strategy + teamwork + a tiny bit of chaos.</li>
+            </ul>
+
+            <div class="chips">
+              <span class="chip">Poetry</span>
+              <span class="chip">Storytelling</span>
+              <span class="chip">Data storytelling</span>
+              <span class="chip">Games</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="timeline reveal" style="--d: .16s;">
+          <div class="timeline-item">
+            <div class="t-dot"></div>
+            <div class="t-body">
+              <div class="t-top">
+                <h3 class="tight">University of Florida</h3>
+                <span class="tag">Aug 2025 – Sep 2027</span>
+              </div>
+              <p class="muted tight">M.S. in Applied Data Science</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="t-dot"></div>
+            <div class="t-body">
+              <div class="t-top">
+                <h3 class="tight">University of Mumbai</h3>
+                <span class="tag">Jul 2019 – Oct 2023</span>
+              </div>
+              <p class="muted tight">B.Tech in Information Technology</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="work" class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Experience</h2>
+          <p class="muted">Work that blends analytics, engineering, and real deployment.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal" style="--d: .06s;">
+            <div class="card-top">
+              <div>
+                <h3 class="tight">Technical Intern</h3>
+                <p class="muted tight">Thapasu Foods, LLP • Mar 2024 – Jan 2025</p>
+              </div>
+              <span class="badge">SQL • Python • ETL</span>
+            </div>
+            <ul class="bullets">
+              <li>Analyzed sales and marketing data using SQL to identify growth opportunities.</li>
+              <li>Automated ETL-style reporting pipelines that improved operational efficiency by <strong>20%</strong>.</li>
+              <li>Built demand forecasting and data modeling workflows to evaluate product performance across regions.</li>
+              <li>Collaborated cross-functionally to validate transformations and document reproducible reporting.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" style="--d: .12s;">
+            <div class="card-top">
+              <div>
+                <h3 class="tight">Computer Vision Intern</h3>
+                <p class="muted tight">Caelum • Oct 2023 – Feb 2024</p>
+              </div>
+              <span class="badge">CV • Spark • AWS</span>
+            </div>
+            <ul class="bullets">
+              <li>Processed large-scale fashion image datasets using modular Spark-based pipelines.</li>
+              <li>Improved object detection evaluation workflows and packaged models for deployment.</li>
+              <li>Deployed and evaluated models on AWS to measure real-world performance and monitor drift.</li>
+              <li>Translated platform research into data-driven UX recommendations.</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" style="--d: .18s;">
+            <div class="card-top">
+              <div>
+                <h3 class="tight">Research Assistant</h3>
+                <p class="muted tight">Atharva College of Engineering • Oct 2023 – Feb 2024</p>
+              </div>
+              <span class="badge">Privacy • LLMs</span>
+            </div>
+            <ul class="bullets">
+              <li>Studied PHR access scenarios and used an LLM to expand plausible use cases (validated by healthcare personnel).</li>
+              <li>Designed a privacy-preserving verification framework using role-based controls and confidentiality attributes.</li>
+              <li>Built a prototype that computes a dynamic “Trust Factor” to authorize access based on role, sensitivity, and context.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Projects</h2>
+          <p class="muted">A few builds I’m proud of — designed for realism and repeatability.</p>
+        </div>
+
+        <div class="projects">
+          <article class="card project reveal" style="--d: .06s;">
+            <div class="project-head">
+              <h3 class="tight">Multi-Agent Deal Negotiation Prototype</h3>
+              <span class="tag">AutoGen • Docker • CI</span>
+            </div>
+            <p class="muted">
+              A multi-agent M&amp;A negotiation simulator inspired by Stanford Law’s alpha prototype, with Buyer/Seller/Regulator
+              agents and negotiation loops with convergence checks.
+            </p>
+            <ul class="bullets">
+              <li>Implemented valuation models (DCF, comps, synergy sharing) and HHI-based antitrust review.</li>
+              <li>Containerized orchestration with Docker and CI tests for consistent reproducibility.</li>
+            </ul>
+            <div class="actions">
+              <a class="btn ghost magnet" href="#" aria-disabled="true" title="Add your GitHub link here">GitHub</a>
+              <a class="btn primary magnet" href="#contact">Request demo</a>
+            </div>
+          </article>
+
+          <article class="card project reveal" style="--d: .12s;">
+            <div class="project-head">
+              <h3 class="tight">User Data–Based Psyche Modelling</h3>
+              <span class="tag">PySpark • SQL • Power BI</span>
+            </div>
+            <p class="muted">
+              Built behavioral personas from the Outbrain Click Prediction dataset using clustering and features around session
+              diversity, recency, and dwell time.
+            </p>
+            <ul class="bullets">
+              <li>Identified personas like planners, novelty-seekers, and impulsive users.</li>
+              <li>Delivered insights in a Power BI dashboard to support engagement and retention decisions.</li>
+            </ul>
+            <div class="actions">
+              <a class="btn ghost magnet" href="#" aria-disabled="true" title="Add your GitHub link here">GitHub</a>
+              <a class="btn primary magnet" href="#contact">Talk through it</a>
+            </div>
+          </article>
+
+          <article class="card project reveal" style="--d: .18s;">
+            <div class="project-head">
+              <h3 class="tight">Microbusiness Inclusivity &amp; Economic Resilience</h3>
+              <span class="tag">PCA • Streamlit</span>
+            </div>
+            <p class="muted">
+              Integrated Venture Forward, U.S. Census (ACS), BLS, and FCC Broadband data to build composite Inclusivity and
+              Resilience indexes and forecast future patterns.
+            </p>
+            <ul class="bullets">
+              <li>Engineered indicators across growth, recovery, diversity, education, and broadband access.</li>
+              <li>Deployed dashboard on Streamlit Cloud for interactive exploration.</li>
+            </ul>
+            <div class="actions">
+              <a class="btn ghost magnet" href="#" aria-disabled="true" title="Add your GitHub link here">GitHub</a>
+              <a class="btn primary magnet" href="#contact">See results</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="note reveal" style="--d:.22s;">
+          Tip: replace the disabled “GitHub” buttons with your real repo links when you’re ready.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Skills</h2>
+          <p class="muted">Tools I use to ship work — from prototypes to production-ish builds.</p>
+        </div>
+
+        <div class="skill-grid">
+          <div class="card reveal" style="--d:.06s;">
+            <h3>Programming</h3>
+            <div class="tags">
+              <span class="chip">Python</span>
+              <span class="chip">Java</span>
+              <span class="chip">C</span>
+              <span class="chip">Solidity</span>
+            </div>
+          </div>
+
+          <div class="card reveal" style="--d:.12s;">
+            <h3>Web</h3>
+            <div class="tags">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Node.js</span>
+            </div>
+          </div>
+
+          <div class="card reveal" style="--d:.18s;">
+            <h3>Data &amp; ML</h3>
+            <div class="tags">
+              <span class="chip">SQL</span>
+              <span class="chip">PySpark</span>
+              <span class="chip">TensorFlow</span>
+              <span class="chip">PyTorch</span>
+            </div>
+          </div>
+
+          <div class="card reveal" style="--d:.24s;">
+            <h3>Tools</h3>
+            <div class="tags">
+              <span class="chip">Docker</span>
+              <span class="chip">AWS</span>
+              <span class="chip">Firebase</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">Power BI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Contact</h2>
+          <p class="muted">If you want to collaborate, chat, or just talk ideas — I’m open.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card reveal" style="--d:.06s;">
+            <h3>Let’s talk</h3>
+            <p class="muted">Best way is email. I usually reply within a day.</p>
+
+            <div class="contact-rows">
+              <a class="link-row magnet" href="mailto:maitreyphatak@gmail.com">
+                <span>Email</span>
+                <span class="chev">maitreyphatak@gmail.com</span>
+              </a>
+              <a class="link-row magnet" href="#" aria-disabled="true" title="Add your LinkedIn URL">
+                <span>LinkedIn</span>
+                <span class="chev">Add link →</span>
+              </a>
+              <a class="link-row magnet" href="#" aria-disabled="true" title="Add your GitHub URL">
+                <span>GitHub</span>
+                <span class="chev">Add link →</span>
+              </a>
+            </div>
+
+            <div class="actions">
+              <a class="btn primary magnet" href="Resume.pdf" target="_blank" rel="noopener">Open resume</a>
+              <a class="btn ghost magnet" href="#top">Back to top</a>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--d:.12s;">
+            <h3>What I’m looking for</h3>
+            <ul class="bullets">
+              <li>Data science / analytics roles with strong engineering practices.</li>
+              <li>Opportunities involving forecasting, experimentation, or ML evaluation.</li>
+              <li>Teams that value writing, clarity, and craft.</li>
+            </ul>
+
+            <div class="callout">
+              <p class="muted tight">
+                Bonus: if you like poetry or stories, we’ll probably get along.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap">
+        <p class="muted">© <span id="year"></span> Maitrey Vivek Phatak • Built for GitHub Pages</p>
+      </div>
+    </footer>
+  </main>
+
+  <div class="cursor" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
